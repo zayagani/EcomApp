@@ -1,5 +1,18 @@
 import React,{Component} from 'react';
+import Profile from './Profile';
+
 class ListDisplay extends Component{
+constructor(props){
+super(props)
+    this.state={id:""}
+}
+
+handleClick(id){
+
+    this.setState({id})
+//alert(id)
+    window.location.href="/Profile";
+}
 
 render(){
 
@@ -15,7 +28,7 @@ return(
   </tr></thead>
 {this.props.greet.map((x)=>(
     <tbody>
-    <tr>
+    <tr onClick={this.handleClick.bind(this,x.id)}>
       <td data-label="Id">{x.id}</td>
      <td data-label="First Name">{x.first_name}</td>
       <td data-label="Last Name">{x.last_name}</td>

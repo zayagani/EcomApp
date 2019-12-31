@@ -5,6 +5,7 @@ import Bar from './Component/Bar';
 import Tab from './Component/Tab';
 import List from './Component/List';
 import Step from './Component/Step';
+import Profile from './Component/Profile';
 
 import {
   BrowserRouter as Router,
@@ -42,6 +43,7 @@ class Routes extends Component {
           <Route path="/form" component={Form} />
           <Route path="/bar" component={Bar} />
           <Route path="/list" component={List} />
+          <Route path="/profile" component={Profile} />
         </Switch>
     </Router>
 
