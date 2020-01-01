@@ -36,7 +36,7 @@ class Routes extends Component {
               <Link to="/list">List</Link>
             </li>
             <li>
-              <Link to="/search">Seacrh</Link>
+              <Link to="/search">Search</Link>
             </li>
           </ul>
         </nav>

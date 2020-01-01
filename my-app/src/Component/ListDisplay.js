@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import Profile from './Profile';
-
+import { Input } from 'semantic-ui-react';
 class ListDisplay extends Component{
 constructor(props){
 super(props)
@@ -10,7 +10,6 @@ super(props)
 handleClick(id){
 
     this.setState({id})
-//alert(id)
     window.location.href="/Profile";
 }
 
@@ -18,7 +17,7 @@ render(){
 
 return(
 <div>
-
+<Input focus placeholder='Search...' />
 <table class="ui celled table">
   <thead>
     <tr><th>Id</th>
