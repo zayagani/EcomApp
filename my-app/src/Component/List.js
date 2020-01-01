@@ -18,7 +18,7 @@ render(){
 
 return(
 <div>
-
+{console.log(this.state.data,"----state data")}
 <ListDisplay greet={this.state.data} />
 </div>)
 

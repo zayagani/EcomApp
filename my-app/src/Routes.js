@@ -6,6 +6,8 @@ import Tab from './Component/Tab';
 import List from './Component/List';
 import Step from './Component/Step';
 import Profile from './Component/Profile';
+import Search from './Component/Search';
+
 
 import {
   BrowserRouter as Router,
@@ -33,6 +35,9 @@ class Routes extends Component {
              <li>
               <Link to="/list">List</Link>
             </li>
+            <li>
+              <Link to="/search">Seacrh</Link>
+            </li>
           </ul>
         </nav>
 
@@ -44,6 +49,7 @@ class Routes extends Component {
           <Route path="/bar" component={Bar} />
           <Route path="/list" component={List} />
           <Route path="/profile" component={Profile} />
+          <Route path="/search" component={Search} />
         </Switch>
     </Router>
 
