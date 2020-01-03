@@ -1,4 +1,6 @@
 import React,{Component} from 'react'
+import { Button, Modal } from 'semantic-ui-react'
+
 
 class Form extends Component{
 
@@ -63,17 +65,27 @@ return(<div>
         <div class="ui blue submit button" onClick={this.handleLoginClick}>Login</div>
       </div>
     </div>
-    <div class="middle aligned column">
+   {/*} <div class="middle aligned column">
       <div class="ui big button" onClick={this.handleClick}>
-        <i class="signup icon"></i>
-        Sign Up
-      </div>
-    </div>
+        <i class="signup icon"></i>*/}
+        <Modal
+    trigger={<Button style={{margin:"auto"}}>Sign Up</Button>}
+    header='Reminder!'
+    content='<input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleChange}/>'
+  
+    actions={['Snooze', { key: 'done', content: 'Done', positive: true }]}
+  />
+     {/* </div>
+    </div>*/}
   </div>
   <div class="ui vertical divider">
     Or
   </div>
 </div>
+
+
+ 
+
 
 </div>
 

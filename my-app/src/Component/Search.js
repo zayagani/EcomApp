@@ -1,6 +1,7 @@
 import React ,{Component} from 'react';
 import countriesList from "./countries.json";
 import { Card, Icon } from 'semantic-ui-react';
+import { Pagination } from 'semantic-ui-react'
 
 class Search extends Component{
 
@@ -11,9 +12,16 @@ this.onChange=this.onchange.bind(this);
 }
 
 
-onchange = e => {
+/*onchange = e => {
   this.setState({ search: e.target.value });
 };
+*/
+onchange(e){
+
+  this.setState({ search: e.target.value });
+
+}
+
 
 render(){
 const { search } = this.state;
@@ -31,10 +39,11 @@ return(<div>
   <div class="results"></div>
 </div>
 
-
+<Pagination defaultActivePage={5} totalPages={10} />
 
 {filteredCountries.map(country => {
   return(
+   
 <Card>
     <Card.Content header='Country' />
     <Card.Content description={country.name} />
@@ -43,6 +52,7 @@ return(<div>
     </Card.Content>
 </Card>
   )
+  
 })}
 </div>)
 }

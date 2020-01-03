@@ -7,7 +7,7 @@ import List from './Component/List';
 import Step from './Component/Step';
 import Profile from './Component/Profile';
 import Search from './Component/Search';
-
+import Gmap from './Component/Gmap';
 
 import {
   BrowserRouter as Router,
@@ -38,6 +38,9 @@ class Routes extends Component {
             <li>
               <Link to="/search">Search</Link>
             </li>
+            <li>
+            <Link to="/gmap">Gmap</Link>
+            </li>
           </ul>
         </nav>
 
@@ -50,6 +53,7 @@ class Routes extends Component {
           <Route path="/list" component={List} />
           <Route path="/profile" component={Profile} />
           <Route path="/search" component={Search} />
+          <Route path="/gmap" component={Gmap}/>
         </Switch>
     </Router>
 
