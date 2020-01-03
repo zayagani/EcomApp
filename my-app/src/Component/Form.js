@@ -26,8 +26,6 @@ handleClick(){
 
 }
 
-
-
 handleLoginClick(){
   if(this.state.username === "zaya@gmail.com" && this.state.password === "zayagani"){
   alert("login")
@@ -36,8 +34,6 @@ handleLoginClick(){
   alert("fail")
 }
 }
-
-
 
 render(){
 return(<div>
