@@ -7,6 +7,7 @@ import List from './Component/List';
 import StepComp from './Component/StepComp';
 import Profile from './Component/Profile';
 import Search from './Component/Search';
+import ContextApiForm from "./Component/ContextApiForm";
 
 
 import {
@@ -53,6 +54,9 @@ this.state={ activeItem: 'home' }
             <li>
               <Link to="/tabcomp">TabComp</Link>
             </li>
+            <li>
+              <Link to="/contextapiform">ContextApi</Link>
+            </li>
           </ul>
         </nav>
 
@@ -66,6 +70,7 @@ this.state={ activeItem: 'home' }
           <Route path="/profile" component={Profile} />
           <Route path="/search" component={Search} />
           <Route path="/tabcomp" component={Tabcomp}/>
+          <Route path="/contextapiform" component={ContextApiForm}/>
         </Switch>
     </Router>
 

@@ -1,4 +1,6 @@
 import React,{Component} from 'react'
+import FormComponent from './FormComponent';
+
 
 class Form extends Component{
 
@@ -22,8 +24,8 @@ this.setState({[event.target.name]: event.target.value});
 }
 
 handleClick(){
-
-
+alert("hi")
+window.location.href="/FormComponent"
 }
 
 handleLoginClick(){
